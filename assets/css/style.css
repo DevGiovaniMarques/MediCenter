@@ -1,0 +1,70 @@
+body{
+    /*Tira todos os espaços do site*/
+margin: 0;
+padding: 0;
+
+}
+header{
+    /* ativa o flexbox*/
+    display: flex;
+    /* justifica o flexbox */
+    justify-content: center;
+    height: 120px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo{
+    /* ativa o flexbox*/
+    display: flex;
+    align-items: center;    
+}
+.menu{
+    /* ativa o flexbox*/
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    width: 230px;
+}
+nav ul,nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    /* ativa o flexbox*/
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .active a, nav a:hover{
+    background-color: #39aae1;
+    color: #ffffff;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/mulher2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column{
+    /*seleciona o item se será linha ou coluna*/
+    flex-direction: column;
+}
